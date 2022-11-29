@@ -17,7 +17,7 @@
         </ul>
     </li>
     <li><a href="## Installation and Execution">Installation and Execution</a></li>
-    <li><a href="**Conclusion**">Conclusion</a></li>
+    <li><a href="## Conclusion">Conclusion</a></li>
     <li><a href="## Credits">Credits</a></li>
     <li><a href="## Resources">Resources</a></li>
   </ol>
@@ -121,7 +121,7 @@ python CubicSpline.py
 The exporting of the audio files have been comented out but it can be uncommented to write the wav files into the directory. 
 
 
-**Conclusion**
+## Conclusion
  Comparing the two different interpolation methods, we notice that method of Median Filter achieves a lower MSE. The MSE of Median Filter method is marginally better but it gets worse as the window length increases. The runtime varies with respect to the Loading bar time, so calculating it acurately isnt feasible. The Cubic Spline method sounds better when listened to but thats a personal opinion. 
 
 
