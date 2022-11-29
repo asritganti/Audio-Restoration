@@ -12,11 +12,11 @@ from tqdm import tqdm
 import unittest
 from sklearn.metrics import mean_squared_error
 
-
+# it all begins here, asking the user for an input and create a list out of it
 freq, aud_data = scipy.io.wavfile.read('Beatles_corrupt2.wav')
 freq2, aud_data2 = scipy.io.wavfile.read('clean_mono.wav')
 aud_len = len(aud_data)
-# it all begins here, asking the user for an input and create a list out of it
+
 deg_clks = scipy.io.loadmat('degraded_clicks.mat')
 deg_lst = list(deg_clks.items())
 deg_arr = np.asarray(deg_lst)[3][1][0]
@@ -86,6 +86,7 @@ plt.title("Restored Signal")
 plt.xlabel("No. of Samples")
 plt.ylabel("Amplitude")
 plt.show()
+#creating the restored audio file in wav
 #write("Restored_aud.wav", freq, list3)
 
 m1 = aud_data2
@@ -97,7 +98,7 @@ print("Mean Squared Error", mse)
 
 list4 = list2
 
-
+#unit testing
 class testing_mthds(unittest.TestCase):
     def test_mdnfltr(self):
         for i in range(0, len(deg_res)):

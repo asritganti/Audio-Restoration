@@ -1,5 +1,6 @@
 # function to calculate the median of given list of numbers
 def median_fltr(data):
+    #docstring
     '''
     Takes input array of real numbers, Sorts the array and returns the median of the data
     Args:
