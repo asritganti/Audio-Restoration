@@ -26,6 +26,12 @@
 ## So whats this assignement about?
 Ever since Edison tinkered with the tinfoil cylinder phonogrpah in 1877 to reproduce a human voice, we have been constantly trying to find better ways to restore audio. Previously, we were working with Matlab to detect clicks in a noisy signal and we did try to restore the audio to a certain extent but were tied down with the scope of the model and the module. Now we move into the realm of python and have performed a couple of interpolation methods to restore the original audio. Taking a pinch of salt and ignoring the Mean Squared Error for a moment, we can hear the audio and say that we have been somewhat successful. Here is an attempt to explain the same. 
 
+If you want spoilers you can listen to the audio files below. But its more fun if you go through the contents, understand whats happening and come back here to give it a go. Hey, I am not judging, go ahead. 
+1. [Clean Audio](https://user-images.githubusercontent.com/119136741/204660486-00f91fb5-9d00-4246-9a4d-a8adfe58be57.webm)
+2. [Corrupt Audio](https://user-images.githubusercontent.com/119136741/204660481-c4861f5a-fd88-4c6b-8186-cf0719406c03.webm)
+3. [Restored Audio Median Filter](https://user-images.githubusercontent.com/119136741/204660489-8a8863ba-faa9-4352-a59d-bef4707a53cd.webm)
+4. [Restored Audio Cubic Spline](https://user-images.githubusercontent.com/119136741/204660488-033feea7-346f-42b5-959c-fa6d7eb8d53d.webm)
+
 ## Interpolation techniques used 
 
 ### Median Filtering
@@ -50,10 +56,10 @@ The code for Median Filter works in the following manner.
 ### Results
 The degraded audio signal was acurately restored [Restored](Restored_Median_7.wav) and the following were observed. 
 1. Mean squared error (MSE) was calculated for different window lengths as shown in the graph attached below. 
-<img src="MSE_graph.png" width="415" height="315">
+<img src="MSE_graph.png" width="755" height="465">
 2. The least MSE was determined corresponding to a window length of 7. 
-<img src="MSE_1.png" width="670" height="400">
-<img src="MSE_2.png" width="670" height="400">
+<img src="MSE_1.png" width="900" height="400">
+<img src="MSE_2.png" width="900" height="400">
 3. The Average MSE came out to be ```0.5153555967841682 ```.
 
 
@@ -82,11 +88,11 @@ The code for Cubic Spline works as follows.
 7. Finally we compare the restored signal with the clean one to determine the mean squared error. 
 
 ### Results
-The degraded audio signal was acurately restored [Restored Audio](Restored_aud_spline.wav)  and the following were observed. 
+The degraded audio signal was acurately restored [Restored Audio](Restored_aud_spline.wav) and the following were observed. 
 1. Mean Sqauared Error was calulcated with respect to the Clean Signal. It was recorded to be ``` MSE = 1.5630571016285302 ```.
 2. The following are the graphs of the Audio signals.
-<img src="Cubic_Spline2.png" width="670" height="400">
-<img src="Cubic_Spline.png" width="670" height="400">
+<img src="Cubic_Spline2.png" width="900" height="400">
+<img src="Cubic_Spline.png" width="900" height="400">
 
 ---
 
