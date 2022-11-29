@@ -58,9 +58,10 @@ The degraded audio signal was acurately restored [Restored](Restored_Median_7.wa
 1. Mean squared error (MSE) was calculated for different window lengths as shown in the graph attached below. 
 <img src="MSE_graph.png" width="755" height="465">
 2. The least MSE was determined corresponding to a window length of 7. 
-<img src="MSE_1.png" width="900" height="400">
-<img src="MSE_2.png" width="900" height="400">
-3. The Average MSE came out to be ```0.5153555967841682 ```.
+<img src="MSE_1.png" width="950" height="600">
+<img src="MSE_2.png" width="950" height="600">
+
+3. The Average MSE came out to be ``` 0.5153555967841682  ```.
 
 
 
