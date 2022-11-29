@@ -6,7 +6,7 @@
     <li>
       <a href="## So whats this assignement about?">The Assignment</a>
     <li>
-      <a href="## Interpolation techniques used :">Getting Started</a>
+      <a href="## Interpolation techniques used">Interpolation techniques used</a>
       <ul>
         <li><a href="### Median Filtering">Median Filtering</a></li>
         <li><a href="### Methodology">Methodology</a></li>
@@ -26,7 +26,7 @@
 ## So whats this assignement about?
 Ever since Edison tinkered with the tinfoil cylinder phonogrpah in 1877 to reproduce a human voice, we have been constantly trying to find better ways to restore audio. Previously, we were working with Matlab to detect clicks in a noisy signal and we did try to restore the audio to a certain extent but were tied down with the scope of the model and the module. Now we move into the realm of python and have performed a couple of interpolation methods to restore the original audio. Taking a pinch of salt and ignoring the Mean Squared Error for a moment, we can hear the audio and say that we have been somewhat successful. Here is an attempt to explain the same. 
 
-## Interpolation techniques used : 
+## Interpolation techniques used 
 
 ### Median Filtering
 
